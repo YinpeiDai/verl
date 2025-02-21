@@ -3,7 +3,7 @@ export VLLM_ATTENTION_BACKEND=XFORMERS
 export RAY_TMPDIR="/data/daiyp/ray"
 
 MODEL_PATH="/nfs/turbo/coe-chaijy-unreplicated/pre-trained-weights/Qwen2.5-0.5B-Instruct"
-DATA_PATH="/home/daiyp/OpenO1/deepscaler/parquet/gsm8k"
+DATA_PATH="/home/daiyp/deepscaler/parquet/gsm8k"
 
 python3 -m verl.trainer.main_ppo \
  data.train_files=$DATA_PATH/train.parquet \
